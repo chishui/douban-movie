@@ -2,6 +2,11 @@ Douban-Movie
 ====================================
 Display movie information retrieved from Douban (豆瓣) in your terminal. 
 
+![alt text](screenshots/douban-movie.png "quiz list" )
+
+
+[![PyPI](https://img.shields.io/pypi/v/nine.svg?maxAge=2592000)](https://pypi.python.org/pypi/douban-movie)
+[![PyPI](https://img.shields.io/badge/python-2.7-blue.svg?maxAge=2592000)](https://pypi.python.org/pypi/douban-movie)
 ------------------
 # Installation
 ```
