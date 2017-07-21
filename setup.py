@@ -5,11 +5,11 @@ from setuptools import setup
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
-requirements = ['requests', 'bs4', 'lxml']
+requirements = ['requests', 'bs4', 'lxml', 'urwid']
 
 setup(
     name = "douban-movie",
-    version = "0.0.1",
+    version = "0.0.3",
     author = "Liyun Xiu",
     author_email = "chishui2@gmail.com",
     description = "Get movie info from Douban (豆瓣) and display in your terminal",

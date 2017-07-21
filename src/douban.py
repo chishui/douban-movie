@@ -18,6 +18,7 @@ class Movie(object):
         self.director = ''
         self.actor = ''
         self.year = ''
+        self.sub_title = ''
 
     def __str__(self):
         text =  '===============   Douban Movie   ===============\n'+\
@@ -40,11 +41,17 @@ def search(text):
     items = json.loads(data)
     if len(items) == 0:
         return
-    movie = Movie()
-    movie.id = items[0]['id']
-    movie.title = items[0]['title']
-    movie.year = items[0]['year']
-    return movie
+    movies = []
+    for item in items:
+        if item['type'] != 'movie':
+            continue
+        movie = Movie()
+        movie.id = item['id']
+        movie.title = item['title']
+        movie.year = item['year']
+        movie.sub_title = item['sub_title']
+        movies.append(movie)
+    return movies
 
 def parse(movie):
     url = PAGE_URL % movie.id
@@ -66,9 +73,9 @@ def parse(movie):
     print movie
 
 def get_movie(text):
-    movie = search(text)
-    if movie:
-        parse(movie)
+    movies = search(text)
+    if movies and len(movies):
+        parse(movies[0])
     else:
         print 'cound not find movie: ' + text
 
