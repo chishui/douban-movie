@@ -48,7 +48,7 @@ class ListView(urwid.Frame):
 
     def keypress(self, size, key):
         global loop
-        if key is 'enter':
+        if key == 'enter':
             loop.data = self.listbox.get_focus()[0].data
             raise urwid.ExitMainLoop()
 

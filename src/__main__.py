@@ -1,5 +1,5 @@
-from douban import *
-from view import run
+from .douban import *
+from .view import run
 import sys
 import traceback
 import argparse
@@ -24,6 +24,6 @@ def main():
         else:
             get_movie(args.movie_name)
     except Exception as e:
-        print 'exception', e
+        print('exception', e)
         traceback.print_exc()
         pass

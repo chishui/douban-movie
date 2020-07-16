@@ -7,11 +7,11 @@ Display movie information retrieved from Douban (豆瓣) in your terminal.
 
 
 [![PyPI](https://img.shields.io/pypi/v/nine.svg?maxAge=2592000)](https://pypi.python.org/pypi/douban-movie)
-[![PyPI](https://img.shields.io/badge/python-2.7-blue.svg?maxAge=2592000)](https://pypi.python.org/pypi/douban-movie)
+[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360)
 
 ------------------
 # Requirements
-- Python 2.7
+- Python 3.6
 - [Urwid](https://github.com/urwid/urwid)
 - Requests
 - BeautifulSoup

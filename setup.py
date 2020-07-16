@@ -9,7 +9,7 @@ requirements = ['requests', 'bs4', 'lxml', 'urwid']
 
 setup(
     name = "douban-movie",
-    version = "0.0.3",
+    version = "0.0.4",
     author = "Liyun Xiu",
     author_email = "chishui2@gmail.com",
     description = "Get movie info from Douban (豆瓣) and display in your terminal",
